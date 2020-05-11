@@ -1,16 +1,21 @@
-# Ring Integration
-To use the Ring integration, first install the Ring_Integration app. Next install the Ring_Manager, Ring_Doorbell, Ring_Camera, and Ring_Battery_Camera drivers.
+# Hubitat
+<H1>Applications:</H1>
+<ul>
+  <li>NOAA Weather Alerts - announce weather alerts for your area</li>
+  <li>iRobot Scheduler - advanced scheduler for iRobot cleaning devices</li>
+  <li>Salt Water Tank - Auduino code to make a DIY Salt Tank monitor device</li>
+  <li>You Got Mail - mailbox TTS announcement application </li>
+</ul>
+<br>
+<H1>Drivers:</H1>
+<ul>
+  <li>MQTT Generic Driver - robust generic driver to send/receive MQTT topic(s)</li>
+  <li>Z-Wave Door/Window Sensor as Smoke Detector</li>
+ </ul>
+<br>
+Donations are always appreciated:<br>
+<a href="https://paypal.me/aaronmward?locale.x=en_US" title="PayPal.Me" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" border="0" alt="PayPal Logo"></a>
+<br><br>
 
-## Configuring Alexa
-1. For each Ring device create a routine for Motion Detected
-2. Set the routine to set the Ring Manager device to a specific unique dimmer level
-3. Repeat the above 2 steps for Doorbell button pushes
-
-## Configure the App
-1. Provide your Ring credentials
-2. Select the devices you wish to configure for the integration
-3. Provide the same dimmer values you specified in the Alexa routine for each setting in the app 
-
-## Quick Summary
-Basically, when the Alexa routine occurs, the Ring Manager device will be set to a specific dimmer level. The Ring Integration app will translate this to triggering motion or a button push for the appropriate ring virtual device.
-
+<a href="https://community.hubitat.com/t/release-app-watchdog/9952/1">App Watchdog</a> JSON File:<br>
+https://raw.githubusercontent.com/PrayerfulDrop/Hubitat/master/AaronWardAppUpdate.json
